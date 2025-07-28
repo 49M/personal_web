@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code2, Rocket, Brain, Target } from "lucide-react";
+import { InteractiveAvatar } from "./InteractiveAvatar";
 
 export const AboutSection = () => {
   const highlights = [
@@ -29,47 +30,54 @@ export const AboutSection = () => {
   const values = ["Innovation", "Quality", "Collaboration", "Growth", "Impact"];
 
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
               About <span className="gradient-text">Me</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               A passionate computer science student dedicated to creating innovative solutions 
               in the SaaS and startup ecosystem.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Interactive Avatar */}
+          <div className="flex justify-center mb-20">
+            <InteractiveAvatar />
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
             {/* Left Column - Story */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold gradient-text-accent">My Journey</h3>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  As a Computer Science student with a passion for entrepreneurship, I'm fascinated by 
-                  the potential of technology to solve real-world problems. My journey began with curiosity 
-                  about how software works and evolved into a mission to build meaningful products.
-                </p>
-                <p>
-                  Currently immersed in the SaaS startup world, I'm learning not just how to code, 
-                  but how to think like an entrepreneur. I believe in the power of well-designed 
-                  software to transform businesses and improve lives.
-                </p>
-                <p>
-                  When I'm not coding, you'll find me exploring new technologies, reading about 
-                  startup success stories, or brainstorming the next big idea with fellow developers.
-                </p>
+            <div className="space-y-8">
+              <div className="glass p-8 rounded-2xl hover:glow-primary transition-all duration-300">
+                <h3 className="text-3xl font-semibold gradient-text-accent mb-6">My Journey</h3>
+                <div className="space-y-6 text-muted-foreground leading-relaxed">
+                  <p>
+                    As a Computer Science student with a passion for entrepreneurship, I'm fascinated by 
+                    the potential of technology to solve real-world problems. My journey began with curiosity 
+                    about how software works and evolved into a mission to build meaningful products.
+                  </p>
+                  <p>
+                    Currently immersed in the SaaS startup world, I'm learning not just how to code, 
+                    but how to think like an entrepreneur. I believe in the power of well-designed 
+                    software to transform businesses and improve lives.
+                  </p>
+                  <p>
+                    When I'm not coding, you'll find me exploring new technologies, reading about 
+                    startup success stories, or brainstorming the next big idea with fellow developers.
+                  </p>
+                </div>
               </div>
 
               {/* Values */}
-              <div>
-                <h4 className="text-lg font-semibold mb-3 text-accent">Core Values</h4>
-                <div className="flex flex-wrap gap-2">
+              <div className="glass p-6 rounded-2xl">
+                <h4 className="text-xl font-semibold mb-4 text-accent">Core Values</h4>
+                <div className="flex flex-wrap gap-3">
                   {values.map((value, index) => (
-                    <Badge key={index} variant="secondary" className="px-3 py-1">
+                    <Badge key={index} variant="secondary" className="px-4 py-2 text-sm hover:scale-105 transition-transform">
                       {value}
                     </Badge>
                   ))}
@@ -80,16 +88,16 @@ export const AboutSection = () => {
             {/* Right Column - Highlights */}
             <div className="grid gap-6">
               {highlights.map((highlight, index) => (
-                <Card key={index} className="glass p-6 hover:glow-primary transition-all duration-300 group">
-                  <div className="flex items-start space-x-4">
-                    <div className="p-2 rounded-lg bg-gradient-primary">
-                      <highlight.icon className="h-6 w-6 text-primary-foreground" />
+                <Card key={index} className="glass p-8 hover:glow-primary transition-all duration-500 group border-0">
+                  <div className="flex items-start space-x-6">
+                    <div className="p-4 rounded-2xl bg-gradient-primary shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <highlight.icon className="h-8 w-8 text-primary-foreground" />
                     </div>
-                    <div>
-                      <h4 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                    <div className="flex-1">
+                      <h4 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
                         {highlight.title}
                       </h4>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground leading-relaxed">
                         {highlight.description}
                       </p>
                     </div>
@@ -100,22 +108,24 @@ export const AboutSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">3+</div>
-              <div className="text-muted-foreground">Years Coding</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">10+</div>
-              <div className="text-muted-foreground">Projects Built</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">5+</div>
-              <div className="text-muted-foreground">Technologies</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">∞</div>
-              <div className="text-muted-foreground">Learning</div>
+          <div className="glass p-8 rounded-3xl">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center group">
+                <div className="text-4xl font-bold gradient-text mb-3 group-hover:scale-110 transition-transform">3+</div>
+                <div className="text-muted-foreground font-medium">Years Coding</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-4xl font-bold gradient-text mb-3 group-hover:scale-110 transition-transform">10+</div>
+                <div className="text-muted-foreground font-medium">Projects Built</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-4xl font-bold gradient-text mb-3 group-hover:scale-110 transition-transform">5+</div>
+                <div className="text-muted-foreground font-medium">Technologies</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-4xl font-bold gradient-text mb-3 group-hover:scale-110 transition-transform">∞</div>
+                <div className="text-muted-foreground font-medium">Learning</div>
+              </div>
             </div>
           </div>
         </div>
