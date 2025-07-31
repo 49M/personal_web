@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-tech.jpg";
 
 export const HeroSection = () => {
   const [currentRole, setCurrentRole] = useState(0);
-  const roles = ["Computer Science Student", "Software Engineer", "SaaS Enthusiast", "Full-Stack Developer"];
+  const roles = ["Software Engineer", "SaaS Builder", "Full-Stack Developer", "Startup Founder"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -58,8 +58,7 @@ export const HeroSection = () => {
           
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-up opacity-0" style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}>
-            Passionate about building innovative SaaS solutions and creating seamless user experiences. 
-            Currently exploring the intersection of technology and entrepreneurship.
+            Building products that 1000+ people use daily. Currently shipping at stealth startup.
           </p>
           
           {/* CTA Buttons */}

@@ -168,8 +168,8 @@ All colors MUST be HSL.
     backdrop-filter: blur(10px);
   }
 
-  /* Animated background particles */
-  .particles {
+  /* Minimal geometric elements */
+  .geometric-bg {
     position: fixed;
     top: 0;
     left: 0;
@@ -177,6 +177,7 @@ All colors MUST be HSL.
     height: 100%;
     pointer-events: none;
     z-index: -1;
+    opacity: 0.03;
   }
 
   /* Floating animation */

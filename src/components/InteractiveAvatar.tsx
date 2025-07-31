@@ -2,11 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const chatBubbles = [
-  "Hello! I'm passionate about SaaS development 🚀",
-  "Currently building innovative software solutions 💻",
-  "Love working with React and modern tech stacks ⚡",
-  "Always learning and growing in the startup space 📈",
-  "Let's build something amazing together! 🌟"
+  "Shipping code daily at stealth startup 🚀",
+  "React + TypeScript = ❤️",
+  "Building SaaS products that scale ⚡",
+  "1000+ users and counting 📈",
+  "Let's build something together! 💻"
 ];
 
 export const InteractiveAvatar = () => {
