@@ -79,60 +79,6 @@ export const InteractiveAvatar = () => {
             CS
           </AvatarFallback>
         </Avatar>
-        
-        {/* Detailed Eyes */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="flex space-x-5" style={{ marginTop: '-8px' }}>
-            {/* Left Eye */}
-            <div className="relative">
-              <div className="w-4 h-3 bg-white rounded-full relative shadow-sm border border-gray-200">
-                {/* Iris */}
-                <div className="w-2.5 h-2.5 bg-blue-600 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  {/* Pupil */}
-                  <div 
-                    className="w-1.5 h-1.5 bg-black rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-150 ease-out"
-                    style={{
-                      transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`
-                    }}
-                  />
-                  {/* Light reflection */}
-                  <div className="w-0.5 h-0.5 bg-white rounded-full absolute top-1 left-1" />
-                </div>
-                {/* Eyelid shadow */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-b from-gray-100/50 to-transparent rounded-t-full" />
-              </div>
-              {/* Eyelashes */}
-              <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 w-4 h-1">
-                <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-600 to-transparent rounded-full" />
-              </div>
-            </div>
-            
-            {/* Right Eye */}
-            <div className="relative">
-              <div className="w-4 h-3 bg-white rounded-full relative shadow-sm border border-gray-200">
-                {/* Iris */}
-                <div className="w-2.5 h-2.5 bg-blue-600 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  {/* Pupil */}
-                  <div 
-                    className="w-1.5 h-1.5 bg-black rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-150 ease-out"
-                    style={{
-                      transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`
-                    }}
-                  />
-                  {/* Light reflection */}
-                  <div className="w-0.5 h-0.5 bg-white rounded-full absolute top-1 left-1" />
-                </div>
-                {/* Eyelid shadow */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-b from-gray-100/50 to-transparent rounded-t-full" />
-              </div>
-              {/* Eyelashes */}
-              <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 w-4 h-1">
-                <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-600 to-transparent rounded-full" />
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Hover Glow */}
         <div className="absolute inset-0 rounded-full glow-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
