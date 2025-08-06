@@ -46,7 +46,7 @@ export const HeroSection = () => {
           
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-            <span className="gradient-text">Alex Developer</span>
+            <span className="gradient-text">Michal Buczek</span>
           </h1>
           
           {/* Dynamic Role */}

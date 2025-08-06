@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from 'react';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const chatBubbles = [
-  "Shipping code daily at stealth startup 🚀",
+  "Shipping code daily 🚀",
   "React + TypeScript = ❤️",
   "Building SaaS products that scale ⚡",
-  "1000+ users and counting 📈",
+  "Learning LangGraph and Vector DBs 📈",
   "Let's build something together! 💻"
 ];
 
@@ -53,9 +53,9 @@ export const InteractiveAvatar = () => {
   }, []);
 
   return (
-    <div className="relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center px-[120px] select-none">
       {/* Chat Bubble */}
-      <div className={`absolute -top-20 left-1/2 transform -translate-x-1/2 transition-all duration-500 ${
+      <div className={`absolute left-[90%] transform -translate-x-1/2 transition-all duration-500 ${
         showBubble ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
       }`}>
         <div className="glass px-4 py-3 rounded-2xl relative max-w-xs">

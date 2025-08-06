@@ -39,7 +39,9 @@ export const AboutSection = () => {
             <div className="text-center mb-16">
               <p className="text-2xl md:text-3xl font-medium text-foreground mb-8 leading-relaxed">
                 Building SaaS products that solve real problems.<br />
-                <span className="gradient-text">Currently shipping at stealth startup.</span>
+                <br />
+                <span className="gradient-text">Passionate About <br />
+                   AI, Fintech, Data Science, Full-Stack</span>
               </p>
             </div>
 

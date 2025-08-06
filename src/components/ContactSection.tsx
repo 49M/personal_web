@@ -33,19 +33,13 @@ export const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex@example.com",
-      href: "mailto:alex@example.com"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "michal_buczek@yahoo.com",
+      href: "mailto:michal_buczek@yahoo.com"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Toronto, ON",
       href: "#"
     }
   ];
@@ -54,19 +48,19 @@ export const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/49M",
       color: "hover:text-foreground"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/michal-buczek2005/",
       color: "hover:text-primary"
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com",
+      href: "https://x.com/MichalBuilds",
       color: "hover:text-accent"
     }
   ];
@@ -236,7 +230,7 @@ export const ContactSection = () => {
                 Let's turn your ideas into reality. I'm here to help bring your vision to life.
               </p>
               <Button variant="hero" size="lg" asChild>
-                <a href="mailto:alex@example.com">
+                <a href="mailto:michal_buczek@yahoo.com">
                   <Mail className="mr-2 h-5 w-5" />
                   Start a Conversation
                 </a>

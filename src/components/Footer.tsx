@@ -16,9 +16,9 @@ export const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:alex@example.com", label: "Email" }
+    { icon: Github, href: "https://github.com/49M", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/michal-buczek2005/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:michal_buczek@yahoo.com", label: "Email" }
   ];
 
   return (
@@ -31,7 +31,7 @@ export const Footer = () => {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Code className="h-6 w-6 text-primary" />
-                <span className="text-xl font-bold gradient-text">Alex Developer</span>
+                <span className="text-xl font-bold gradient-text">Michal Buczek</span>
               </div>
               <p className="text-muted-foreground mb-6 max-w-md">
                 Computer Science student passionate about building innovative SaaS solutions 
@@ -109,7 +109,7 @@ export const Footer = () => {
 
               <div className="flex items-center space-x-4">
                 <p className="text-muted-foreground">
-                  © {currentYear} Alex Developer. All rights reserved.
+                  © {currentYear} Michal Buczek. All rights reserved.
                 </p>
                 <Button
                   variant="ghost"
