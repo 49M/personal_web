@@ -73,17 +73,22 @@ export const HeroSection = () => {
             </Button>
           </div>
           
-          {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16 animate-slide-up opacity-0" style={{ animationDelay: "1.2s", animationFillMode: "forwards" }}>
-            <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
-              <Github className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
-              <Linkedin className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
-              <Mail className="h-6 w-6" />
-            </Button>
+            <a href="https://github.com/49M" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
+                <Github className="h-6 w-6" />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/michal-buczek2005/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
+                <Linkedin className="h-6 w-6" />
+              </Button>
+            </a>
+            <a href="mailto:michal_buczek@yahoo.com">
+              <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
+                <Mail className="h-6 w-6" />
+              </Button>
+            </a>
           </div>
         </div>
         
