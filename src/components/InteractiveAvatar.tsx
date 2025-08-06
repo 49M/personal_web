@@ -74,7 +74,7 @@ export const InteractiveAvatar = () => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <Avatar className="w-32 h-32 ring-4 ring-primary/20 hover:ring-primary/40 transition-all duration-300 hover:scale-105">
-          <AvatarImage src="/src/assets/avatar-portrait.jpg" alt="Profile" className="object-cover" />
+          <AvatarImage src="/lovable-uploads/95e61c09-d347-42bc-8111-e4779191aec3.png" alt="Profile" className="object-cover" />
           <AvatarFallback className="bg-gradient-primary text-primary-foreground text-2xl font-bold">
             CS
           </AvatarFallback>
