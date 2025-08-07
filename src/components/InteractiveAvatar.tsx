@@ -6,6 +6,7 @@ const chatBubbles = [
   "React + TypeScript = ❤️",
   "Building SaaS products that scale ⚡",
   "Learning LangGraph and Vector DBs 📈",
+  "Interested in Data Science and Deep Learning 🤖",
   "Let's build something together! 💻"
 ];
 

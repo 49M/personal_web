@@ -13,7 +13,7 @@ export const AboutSection = () => {
     {
       icon: Rocket,
       title: "SaaS Builder", 
-      description: "Shipped 3 products to production with 1000+ users"
+      description: "Shipped 3 products to production"
     }
   ];
 
@@ -38,8 +38,6 @@ export const AboutSection = () => {
             {/* Core Message */}
             <div className="text-center mb-16">
               <p className="text-2xl md:text-3xl font-medium text-foreground mb-8 leading-relaxed">
-                Building SaaS products that solve real problems.<br />
-                <br />
                 <span className="gradient-text">Passionate About <br />
                    AI, Fintech, Data Science, Full-Stack</span>
               </p>
@@ -63,7 +61,7 @@ export const AboutSection = () => {
             </div>
 
             {/* Tech Stack */}
-            <div className="glass p-8 rounded-3xl text-center">
+            {/* <div className="glass p-8 rounded-3xl text-center">
               <h3 className="text-xl font-semibold gradient-text-accent mb-6">Current Stack</h3>
               <div className="flex flex-wrap justify-center gap-3">
                 {["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"].map((tech, index) => (
@@ -72,7 +70,7 @@ export const AboutSection = () => {
                   </Badge>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -22,13 +22,16 @@ export const ContactSection = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate form submission
-    toast.success("Message sent successfully! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
-
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  const mailtoLink = `mailto:michal_buczek@yahoo.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(formData.message + '\n\nBest regards,\n' + formData.name)}`;
+  
+  window.location.href = mailtoLink;
+  
+  toast.success("Opening your email client...");
+  setFormData({ name: "", email: "", subject: "", message: "" });
+};
   const contactInfo = [
     {
       icon: Mail,
@@ -131,7 +134,7 @@ export const ContactSection = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Tell me about your project or idea..."
+                    placeholder="Tell me about your project, idea or proposition..."
                     rows={6}
                     required
                     className="glass resize-none"
@@ -149,8 +152,8 @@ export const ContactSection = () => {
               <div>
                 <h3 className="text-2xl font-semibold mb-6 gradient-text-accent">Get in Touch</h3>
                 <p className="text-muted-foreground mb-8">
-                  I'm currently open to new opportunities and interesting projects. 
-                  Whether you have a question, want to collaborate, or just want to say hi, 
+                  I'm currently open to new opportunities, internships, and interesting projects. 
+                  Whether you have a question, want to collaborate/connect, or just want to say hi, 
                   I'd love to hear from you!
                 </p>
                 
@@ -211,7 +214,7 @@ export const ContactSection = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                    <span className="text-sm">Open to full-time opportunities</span>
+                    <span className="text-sm">Open to 2026 internship opportunities</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>

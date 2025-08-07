@@ -33,7 +33,7 @@ export const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Code className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold gradient-text">DevPortfolio</span>
+            <span className="text-xl font-bold gradient-text">Welcome</span>
           </div>
 
           {/* Desktop Navigation */}

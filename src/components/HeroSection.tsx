@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-tech.jpg";
 
 export const HeroSection = () => {
   const [currentRole, setCurrentRole] = useState(0);
-  const roles = ["Software Engineer", "SaaS Builder", "Full-Stack Developer", "Startup Founder"];
+  const roles = ["Software Engineer", "SaaS Builder", "Full-Stack Developer", "Startup Guy"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,6 +18,13 @@ export const HeroSection = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -58,19 +65,21 @@ export const HeroSection = () => {
           
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-up opacity-0" style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}>
-            Building products that 1000+ people use daily. Currently shipping at stealth startup.
+            Building products that solve real problems.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up opacity-0" style={{ animationDelay: "1s", animationFillMode: "forwards" }}>
-            <Button variant="hero" size="xl" className="group">
+            <Button variant="hero" size="xl" className="group" onClick={scrollToContact}>
               <Mail className="mr-2 h-5 w-5 group-hover:animate-pulse" />
               Get In Touch
             </Button>
-            <Button variant="glass" size="xl" className="group">
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Download CV
-            </Button>
+            <a href='/michal_buczek_resume.pdf' download>
+              <Button variant="glass" size="xl" className="group">
+                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                Download CV
+              </Button>
+            </a>
           </div>
           
           <div className="flex justify-center space-x-6 mb-16 animate-slide-up opacity-0" style={{ animationDelay: "1.2s", animationFillMode: "forwards" }}>

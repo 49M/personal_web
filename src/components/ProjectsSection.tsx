@@ -107,11 +107,12 @@ export const ProjectsSection = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               A showcase of my technical skills and creative problem-solving through real-world applications.
+              <br /> COMING SOON...
             </p>
           </div>
 
           {/* Featured Projects */}
-          <div className="mb-16">
+          {/* <div className="mb-16">
             <h3 className="text-2xl font-semibold mb-8 gradient-text-accent">🌟 Spotlight Projects</h3>
             <div className="grid lg:grid-cols-2 gap-8">
               {featuredProjects.map((project) => (
@@ -165,10 +166,10 @@ export const ProjectsSection = () => {
                 </Card>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {/* <div className="flex flex-wrap justify-center gap-3 mb-12">
             {filters.map((filter) => (
               <Button
                 key={filter.key}
@@ -180,10 +181,10 @@ export const ProjectsSection = () => {
                 {filter.label}
               </Button>
             ))}
-          </div>
+          </div> */}
 
           {/* All Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project) => (
               <Card key={project.id} className="glass overflow-hidden hover:glow-accent transition-all duration-300 group">
                 <div className="aspect-video bg-gradient-secondary opacity-20 relative">
@@ -241,7 +242,7 @@ export const ProjectsSection = () => {
                 </div>
               </Card>
             ))}
-          </div>
+          </div> */}
 
           {/* Call to Action */}
           <div className="text-center mt-16">
@@ -249,7 +250,7 @@ export const ProjectsSection = () => {
               Interested in collaborating or want to see more of my work?
             </p>
             <Button variant="hero" size="lg" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/49M" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-5 w-5" />
                 View All Projects on GitHub
               </a>

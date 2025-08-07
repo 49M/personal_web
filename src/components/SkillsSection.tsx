@@ -11,27 +11,32 @@ export const SkillsSection = () => {
     frontend: {
       title: "Frontend Development",
       skills: [
-        { name: "React/Next.js", level: 90, description: "Building dynamic user interfaces" },
-        { name: "TypeScript", level: 85, description: "Type-safe development" },
-        { name: "Tailwind CSS", level: 95, description: "Modern styling solutions" },
-        { name: "JavaScript (ES6+)", level: 88, description: "Modern JavaScript features" }
+        { name: "React/Next.js", level: 80, description: "Building dynamic user interfaces" },
+        { name: "TypeScript", level: 80, description: "Type-safe development" },
+        { name: "Tailwind CSS", level: 90, description: "Modern styling solutions" },
+        { name: "HTML", level: 85, description: "Modern JavaScript features" },
+        { name: "Chart.js/Recharts", level: 70, description: "Data visualization libraries" },
+        { name: "Framer Motion", level: 50, description: "Animations and transitions" }
       ]
     },
     backend: {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 80, description: "Server-side JavaScript" },
-        { name: "Python", level: 75, description: "Data science & web development" },
-        { name: "PostgreSQL", level: 70, description: "Relational database management" },
-        { name: "REST APIs", level: 85, description: "API design and development" }
+        { name: "Node.js", level: 75, description: "Server-side JavaScript" },
+        { name: "Python", level: 90, description: "Data science & web development" },
+        { name: "PostgreSQL", level: 80, description: "Relational database management" },
+        { name: "REST APIs", level: 80, description: "API design and development" },
+        { name: "Express.js", level: 75, description: "Web application framework for Node.js" },
+        { name: "Django", level: 72, description: "High-level Python web framework" },
+        { name: "Mongo DB", level: 66, description: "NoSQL database for modern applications" }
       ]
     },
     tools: {
-      title: "Tools & Platforms",
+      title: "Other Tools & Platforms",
       skills: [
         { name: "Git/GitHub", level: 90, description: "Version control & collaboration" },
         { name: "Docker", level: 65, description: "Containerization" },
-        { name: "AWS", level: 60, description: "Cloud infrastructure" },
+        { name: "AWS", level: 50, description: "Cloud infrastructure" },
         { name: "Figma", level: 75, description: "UI/UX design" }
       ]
     },
@@ -39,9 +44,11 @@ export const SkillsSection = () => {
       title: "Soft Skills",
       skills: [
         { name: "Problem Solving", level: 95, description: "Analytical thinking" },
-        { name: "Communication", level: 85, description: "Clear technical communication" },
-        { name: "Leadership", level: 80, description: "Team collaboration" },
-        { name: "Learning Agility", level: 98, description: "Adapting to new technologies" }
+        { name: "Communication", level: 90, description: "Clear technical communication" },
+        { name: "Leadership", level: 90, description: "Team collaboration" },
+        { name: "Learning Agility", level: 99, description: "Adapting to new technologies" },
+        { name: "Time Management", level: 85, description: "Prioritizing tasks effectively" },
+        { name: "Critical Thinking", level: 95, description: "Evaluating information objectively" }
       ]
     }
   };
@@ -63,7 +70,7 @@ export const SkillsSection = () => {
               Technical <span className="gradient-text">Skills</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit for building modern, scalable applications and solving complex problems.
+              A comprehensive tool skillset for building modern, scalable applications that solve complex problems.
             </p>
           </div>
 
@@ -105,11 +112,11 @@ export const SkillsSection = () => {
             <div className="code-block">
               <pre className="text-sm overflow-x-auto">
                 <code className="text-accent animate-code-glow">{`const developmentPhilosophy = {
-  code: "Clean, readable, and maintainable",
-  testing: "Write tests that matter",
+  code: "Clean, readable, and maintainable (DRY)",
+  testing: "Write non-redundant tests that matter",
   architecture: "Scalable and modular design",
-  collaboration: "Clear communication and documentation",
-  learning: "Stay curious and never stop growing"
+  collaboration: "Clear milestones, deliverables, communication and documentation",
+  learning: "Stay curious and never stop growing. Complacency is the enemy of progress.",
 };
 
 // Building the future, one line at a time ✨`}</code>
@@ -118,7 +125,7 @@ export const SkillsSection = () => {
           </Card>
 
           {/* Certifications */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <h3 className="text-2xl font-semibold mb-6 gradient-text-accent">Certifications & Achievements</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {certifications.map((cert, index) => (
@@ -127,7 +134,7 @@ export const SkillsSection = () => {
                 </Badge>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
