@@ -86,9 +86,8 @@ export const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4 text-accent">Let's Connect</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>San Francisco, CA</p>
-                <p>alex@example.com</p>
-                <p>+1 (555) 123-4567</p>
+                <p>Toronto, ON</p>
+                <p>michal_buczek@yahoo.com</p>
               </div>
               <Button variant="hero" size="sm" className="mt-4" asChild>
                 <a href="#contact">
